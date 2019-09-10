@@ -1,0 +1,12 @@
+{
+    "apps" : [{
+      "name": "une petite biere ?",
+      "script": "index.js",
+      "instances": 1,
+      "exec_mode": "fork",
+      "autorestart": true,
+      "max_memory_restart": "200M",
+      "env_production": {"NODE_ENV": "production"},
+      "interpreter_args": "--nouse-idle-notification --max-old-space-size=4096"
+    }]
+  }
